@@ -18,3 +18,7 @@ export interface IGithubSearchUser{
     avatar_url: string;
     name: string;
 }
+
+export interface IProfilePassingState {
+    username: string;
+}
