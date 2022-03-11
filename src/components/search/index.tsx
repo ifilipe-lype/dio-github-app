@@ -67,6 +67,7 @@ export function SearchBar() {
             className="bg-transparent text-gray-500"
             onChange={({ target }) => {
               setSearchType(target.value);
+              searchRef.current?.focus();
             }}
           >
             <option value={"users"} className="bg-blue text-transparent">
