@@ -4,7 +4,7 @@ import SearchBar from "../search";
 
 export function Header() {
   return (
-    <header className="flex items-center justify-between w-full p-4">
+    <header className="flex items-center justify-between w-full">
       <div>
         <Link to={"/"}>
           <h1>DIO-Github-app</h1>
