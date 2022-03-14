@@ -1,4 +1,4 @@
-import { IGithubSearchUser } from "../models";
+import { IGithubSearchUser, IGithubUser } from "../models";
 
 interface ISearchResults {
     total_count: number;
@@ -9,6 +9,15 @@ interface ISearchResults {
 const baseURL = "https://api.github.com";
 
 export class GithubPublicApi {
+
+    static async getUserProfile(username: string): Promise <IGithubUser> {
+        try {
+            const result = await fetch(`${baseURL}/users/${username}`);
+            return result.json()
+        } catch (e: any) {
+            throw e;
+        }
+    }
     
 
     static async searchUser(username: string): Promise<ISearchResults> {
