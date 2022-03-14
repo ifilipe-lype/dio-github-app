@@ -59,7 +59,7 @@ export function SearchBar() {
         ></div>
       )}
       <form
-        className="relative flex flex-col w-full"
+        className="relative z-10 flex flex-col w-full"
         onSubmit={seachUserOnSubmit}
       >
         <div className="flex w-full border border-gray-50 transition focus-within:border-gray-100 focus-within:bg-gray-100 py-2 px-4 rounded">
