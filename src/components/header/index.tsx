@@ -7,7 +7,7 @@ export function Header() {
     <header className="flex flex-col gap-4 md:flex-row items-center justify-between w-full py-4">
       <div>
         <Link to={"/"}>
-          <h1 className="text-gray-800 uppercase font-bold">Github-users-repos</h1>
+          <h1 className="text-gray-800 uppercase font-bold">Github-api-eater</h1>
         </Link>
       </div>
       <div className="flex max-w-md w-full">
