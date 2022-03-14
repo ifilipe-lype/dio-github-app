@@ -9,14 +9,12 @@ function App() {
   return (
     <GithubContextProvider>
       <div className="flex flex-col min-h-screen gap-16 items-center">
-        <div className="max-w-4xl w-full flex flex-col items-center">
+        <div className="app-container">
           <Header />
         </div>
-        <div>
           <Routes>
             <Route path="/profile/:username" element={<Profile />} />
           </Routes>
-        </div>
       </div>
     </GithubContextProvider>
   );
