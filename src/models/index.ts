@@ -6,6 +6,7 @@ export interface IGithubUser {
     following: number;
     company: string;
     location: string;
+    html_url: string;
     blog: string;
     email: string;
     bio: string;
