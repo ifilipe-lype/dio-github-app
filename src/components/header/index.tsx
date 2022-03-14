@@ -4,7 +4,7 @@ import SearchBar from "../search";
 
 export function Header() {
   return (
-    <header className="flex flex-col gap-4 lg:flex-row items-center justify-between w-full py-4">
+    <header className="flex flex-col gap-4 md:flex-row items-center justify-between w-full py-4">
       <div>
         <Link to={"/"}>
           <h1 className="text-gray-800 uppercase font-bold">Github-users-repos</h1>

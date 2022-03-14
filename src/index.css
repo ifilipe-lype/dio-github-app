@@ -9,3 +9,15 @@ body {
 .app-container {
     @apply max-w-5xl w-full flex flex-col items-center px-2;
 }
+
+@screen md {
+    .app-container {
+        @apply px-8;
+    }
+}
+
+@media lg {
+    .app-container {
+        @apply px-0;
+    }
+}
