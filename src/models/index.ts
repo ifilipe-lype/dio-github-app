@@ -2,8 +2,10 @@ export interface IGithubUser {
     id: string;
     avatar_url: string;
     name: string;
-    followers_count: number;
-    following_count: number;
+    followers: number;
+    following: number;
+    company: string;
+    location: string;
     blog: string;
     email: string;
     bio: string;
