@@ -48,6 +48,8 @@ export class GithubPublicApi {
           new URLSearchParams({
             page: `${page}`,
             per_page: `${per_page}`,
+            sort: 'created',
+            direction: 'desc'
           })
       );
       return result.json();
