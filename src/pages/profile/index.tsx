@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 import { IGithubRepo, IGithubUser, IProfilePassingState } from "../../models";
 import GithubPublicApi from "../../services";
@@ -10,9 +10,11 @@ import FieldDescription from "./components/userInformation/fieldDescription";
 
 export function Profile() {
   const location = useLocation();
+  const { username: usernameParam } = useParams();
   const { username } = (location.state || {
-    username: "ifilipe-lype",
+    username: usernameParam,
   }) as IProfilePassingState;
+
 
   const [user, setUser] = useState<IGithubUser | null>(null);
   const [repos, setRepos] = useState<IGithubRepo[] | null>(null);
@@ -81,7 +83,9 @@ export function Profile() {
               <nav>
                 <ul>
                   <li className="py-2 px-4 rounded text-gray-500 bg-gray-100">
-                    Most recent {user.public_repos < 12 ? user.public_repos : 12} public repositor
+                    Most recent{" "}
+                    {user.public_repos < 12 ? user.public_repos : 12} public
+                    repositor
                     {user.public_repos > 1 ? "ies" : "y"}
                   </li>
                 </ul>
