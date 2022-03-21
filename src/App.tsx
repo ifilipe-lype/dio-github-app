@@ -1,20 +1,27 @@
 import React from "react";
-import SearchBar from "./components/search";
+import { Routes, Route } from "react-router-dom";
+
+import Header from "./components/header";
+import Profile from "./pages/profile";
+import { GithubContextProvider } from "./contexts/github";
+import Home from "./pages/home";
+import Redirect from "./components/redirect";
 
 function App() {
   return (
-    <div className="flex justify-center">
-      <div className="max-w-4xl w-full flex flex-col items-center">
-        <header className="flex items-center justify-between w-full p-4">
-          <div>
-            <h1>DIO-Github-app</h1>
-          </div>
-          <div className="flex max-w-md w-full">
-            <SearchBar />
-          </div>
-        </header>
+    <GithubContextProvider>
+      <div className="flex flex-col min-h-screen gap-4 lg:gap-12 items-center">
+        <div className="app-container">
+          <Header />
+        </div>
+          <Routes>
+            <Route path="/profile/:username" element={<Profile />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<Redirect to="/home" />} />
+          </Routes>
       </div>
-    </div>
+    </GithubContextProvider>
   );
 }
 
