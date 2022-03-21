@@ -73,7 +73,7 @@ export function SearchBar() {
             <option value={"users"} className="bg-blue text-transparent">
               users
             </option>
-            <option value={"repositories"}>repos</option>
+            {/* <option value={"repositories"}>repos</option> */}
           </select>
           <input
             ref={searchRef}
