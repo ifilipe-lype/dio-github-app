@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Github API Eater
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React based web application which consumes data from github's public api
+
+![image](https://user-images.githubusercontent.com/60755982/159460929-b125a9a6-e966-44a2-afee-a65320dcf2eb.png)
+![image](https://user-images.githubusercontent.com/60755982/159461409-3411c534-16d2-4115-a50e-f9349507f50b.png)
+
+## Tech Stack
+- [TypeScript](https://www.typescriptlang.org/)
+- [ReactJS](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Tailwindcss](https://tailwindcss.com/)
 
 ## Available Scripts
 
@@ -14,33 +23,20 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contribution
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Hey there! feel free to fork this repo, and modify it as you please!
+PR's are welcome if they meet the overall purpose of this project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Here's a list of possible improviment:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Search public repositories
+- Search users based on criteria (location, followers, contribuition, etc.)
+- Search repositories based on criteria (technologies, stars, tags, forks, owner, etc.)
+- A page for listing search results with pagination feature
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+***this list could grow even bigger since brainstorming is more comfortable than taking actual action (LOL)***<br/>
